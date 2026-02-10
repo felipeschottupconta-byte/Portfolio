@@ -1,0 +1,151 @@
+[
+  {
+    "id": "modal-guias",
+    "category": "Fiscal",
+    "title": "Sistema de Envio Automático de Guias Fiscais",
+    "description": "Dashboard + Robô que envia centenas de guias fiscais mensalmente com 100% de rastreabilidade. Elimine dias de trabalho manual.",
+    "tech": ["Python", "Selenium", "Streamlit"],
+    "details": {
+      "stack": "Python, Selenium, Streamlit, SQLite",
+      "features": [
+        "Robô autônomo: Extrai CNPJ e envia via webmail",
+        "Dashboard em tempo real por responsável e status",
+        "Rastreabilidade total com histórico em SQLite",
+        "Zero retrabalho: Confirmação exata de recebimento"
+      ],
+      "impact": [
+        "Redução de 85% no tempo (8 horas → 20 minutos)",
+        "Eliminação de erros críticos de envio"
+      ],
+      "challenge": "Enviar manualmente 200+ guias consome dias e gera erros críticos. O desafio foi criar um sistema auditável que garanta que o cliente certo recebeu a guia certa."
+    }
+  },
+  {
+    "id": "modal-nfse",
+    "category": "Auditoria",
+    "title": "Robô Auditor de NFS-e (Gov.br)",
+    "description": "Automação que baixa centenas de NFS-e, identifica status visual (cancelada/substituída) e gera relatório tributário completo.",
+    "tech": ["Python", "Selenium", "Pandas"],
+    "details": {
+      "stack": "Python, Selenium, XML, Pandas, OpenPyXL",
+      "features": [
+        "Navegação automática no portal gov.br",
+        "Identificação visual de status (Cancelada/Substituída)",
+        "Download inteligente de XMLs por empresa",
+        "Relatório tributário completo (ISS, Retenção, Simples)"
+      ],
+      "impact": [
+        "Redução de 95% do tempo (2 semanas → 30 minutos)",
+        "Auditoria de 500+ notas sem erro humano"
+      ],
+      "challenge": "Auditar manualmente é inviável. O robô supera a dificuldade de identificar notas canceladas apenas visualmente no portal e cruza dados tributários complexos."
+    }
+  },
+  {
+    "id": "modal-st",
+    "category": "Tributário",
+    "title": "Robô Consultor de Substituição Tributária (ST)",
+    "description": "Consulta centenas de NCMs no portal Econet, identifica ST automaticamente e gera planilha. Interface moderna com DrissionPage.",
+    "tech": ["Python", "DrissionPage", "CustomTkinter"],
+    "details": {
+      "stack": "Python, DrissionPage, CustomTkinter, Threading",
+      "features": [
+        "Login automático e gestão de sessão",
+        "Tecnologia sem ChromeDriver (indetectável)",
+        "Controle manual de CAPTCHA quando necessário",
+        "Leitura inteligente: Identifica 'SIM - ST' no HTML"
+      ],
+      "impact": [
+        "Redução de 90% do tempo (2 dias → 2 horas)",
+        "Mitigação de multas por classificação errada"
+      ],
+      "challenge": "Consultar 500+ NCMs manualmente gera fadiga e erro. O uso de DrissionPage permitiu conexão direta com o navegador, contornando bloqueios de automação."
+    }
+  },
+  {
+    "id": "modal-reforma",
+    "category": "Planejamento",
+    "title": "Simulador de Impacto da Reforma Tributária",
+    "description": "Ferramenta visual que simula a transição CBS/IBS (2026-2033) produto a produto, considerando reduções por NCM e base legal.",
+    "tech": ["Python", "Matplotlib", "XML"],
+    "details": {
+      "stack": "Python, CustomTkinter, Matplotlib, Pandas, XML",
+      "features": [
+        "Análise visual: Gráficos Hoje vs. Projeção 2033",
+        "Timeline interativa de transição (2026-2033)",
+        "Cálculo automático de CBS + IBS com reduções",
+        "Fundamentação legal integrada por NCM"
+      ],
+      "impact": [
+        "Previsibilidade de custos futuros",
+        "Análise detalhada (Raio-X) dos impostos"
+      ],
+      "challenge": "A complexidade da transição e falta de clareza sobre custos futuros exigiu um simulador que aplicasse regras tributárias dinâmicas sobre dados reais de XML."
+    }
+  },
+  {
+    "id": "modal-simples",
+    "category": "Contábil",
+    "title": "Simulador Completo do Simples Nacional",
+    "description": "Sistema que lê PDFs do PGDAS, extrai histórico e simula cenários (RBT12, RBA) com memória de cálculo detalhada.",
+    "tech": ["Python", "Streamlit", "PDFPlumber"],
+    "details": {
+      "stack": "Python, Streamlit, PDFPlumber, Altair, LaTeX",
+      "features": [
+        "Extração automática de dados do PGDAS (PDF)",
+        "Simulação inteligente com mudança de faixa automática",
+        "Memória de cálculo visual (Fórmulas LaTeX)",
+        "Alertas de exclusão (RBA > 4.8M) e sublimites"
+      ],
+      "impact": [
+        "Redução de 90% do tempo de cálculo",
+        "Clareza total na explicação da alíquota efetiva"
+      ],
+      "challenge": "O cálculo manual é propenso a erros de faixa. O sistema automatiza a leitura do histórico e projeta cenários futuros com precisão matemática."
+    }
+  },
+  {
+    "id": "modal-honorarios",
+    "category": "Comercial",
+    "title": "Calculadora Inteligente de Honorários",
+    "description": "Sistema protegido que calcula honorários automaticamente e gera propostas em PDF profissionais baseadas em regime e porte.",
+    "tech": ["Python", "Streamlit", "ReportLab"],
+    "details": {
+      "stack": "Python, Streamlit, ReportLab, Pandas",
+      "features": [
+        "Cálculo automático por regime e segmento",
+        "Adicional escalonado de Departamento Pessoal",
+        "Gerador de PDF profissional com logo",
+        "Sistema de login seguro para uso interno"
+      ],
+      "impact": [
+        "Redução de 85% no tempo (20 min → 2 min)",
+        "Padronização e profissionalismo nas propostas"
+      ],
+      "challenge": "A precificação manual gerava inconsistências. A automação padronizou os valores e agilizou o envio de propostas comerciais formais."
+    }
+  },
+  {
+    "id": "modal-bi-suite",
+    "category": "Business Intelligence",
+    "title": "Dashboard Executivo de BI: Análise Completa",
+    "description": "Suite de inteligência que transforma XMLs em estratégia. Integra 4 painéis: Fiscal, Geográfico, Comercial e Operacional.",
+    "tech": ["Power BI", "DAX", "SQL Server", "Azure Maps"],
+    "details": {
+      "stack": "Power BI Desktop & Service, DAX Avançado, SQL Server, Azure Maps, ETL de XML",
+      "features": [
+        "<strong>1. Monitoramento Fiscal:</strong> Controle absoluto de ICMS/DIFAL. Identifica meses com carga tributária anormal e simula impactos de mudança de regime.",
+        "<strong>2. Inteligência Geográfica:</strong> Mapa estratégico (Azure Maps) revelando clusters de clientes, riscos de concentração e otimização logística.",
+        "<strong>3. Performance Comercial:</strong> Visão 360º de vendas por estado, produto e CFOP. Identifica sazonalidade e oportunidades inexploradas.",
+        "<strong>4. Controle Operacional Diário:</strong> Pulso do dia a dia. Identifica picos de demanda (ex: dia 20) para planejamento de estoque e equipe.",
+        "<strong>Cultura Data-Driven:</strong> Transforma 'achismos' em decisões. Antecipa crises (ex: aumento de alíquota) e permite crescimento escalável."
+      ],
+      "impact": [
+        "Redução de 95% no tempo de relatórios (2 dias → 5 min)",
+        "Aumento de 15-25% na margem líquida (Fim da 'Cegueira Tributária')",
+        "Redução de 50-70% em erros de previsão de demanda"
+      ],
+      "challenge": "Superar a fragmentação de dados (ERP, Excel, E-mails) consolidando milhões de linhas de XMLs em um modelo de dados único, performático e auditável."
+    }
+  }
+]

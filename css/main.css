@@ -1,0 +1,27 @@
+:root {
+    --primary: #020617;       
+    --primary-light: #1e293b;
+    --accent: #3b82f6;        
+    --accent-glow: rgba(59, 130, 246, 0.5);
+    --bg: #f8fafc;            
+    --white: #ffffff;
+    --success: #10b981;
+    --gold: #f59e0b;
+    --text-muted: #64748b;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Scrollbar bonita */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }

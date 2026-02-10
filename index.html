@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Schott | Soluções Fiscais Inteligentes</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<header>
+    <div class="profile-img">F</div>
+    
+    <h1>Felipe Schott</h1>
+    <p class="subtitle" style="color: #94a3b8; margin-bottom: 20px;">
+        Estratégia Fiscal impulsionada por <strong>Automação Inteligente</strong> e <strong>Business Intelligence</strong>.
+    </p>
+    
+    <div class="tech-badges">
+        <span class="tech-badge">Python Expert</span>
+        <span class="tech-badge">Power BI</span>
+        <span class="tech-badge">SQL Server</span>
+        <span class="tech-badge">RPA & Selenium</span>
+    </div>
+    
+    <div style="max-width: 800px; margin: 0 auto; text-align: justify; color: #cbd5e1; font-size: 0.95rem; line-height: 1.8; margin-bottom: 30px;">
+        <p>
+            Com sólida formação em <strong>Ciências Contábeis pela Universidade Federal Fluminense (UFF)</strong>, atuo unindo o conhecimento fiscal à tecnologia avançada. 
+            Transformo rotinas manuais e planilhas complexas em soluções automatizadas, utilizando Python e Power BI para garantir compliance, eliminar retrabalho e oferecer suporte estratégico à tomada de decisão.
+        </p>
+    </div>
+
+    <div style="display: flex; gap: 15px; justify-content: center;">
+        <a href="https://www.linkedin.com/in/felipe-schott-9a55652a8/" target="_blank" class="btn-primary" style="background: var(--accent); color: white; padding: 10px 25px; border-radius: 50px; text-decoration: none; font-weight: 600;">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:Felipeschottconsultoria@gmail.com" style="background: rgba(255,255,255,0.1); color: white; padding: 10px 25px; border-radius: 50px; text-decoration: none; border: 1px solid rgba(255,255,255,0.2);">
+            <i class="fas fa-envelope"></i> Contato
+        </a>
+    </div>
+</header>
+
+<nav style="position: sticky; top: 0; background: rgba(255,255,255,0.9); z-index: 100; border-bottom: 1px solid #e2e8f0; backdrop-filter: blur(10px); padding: 10px 0;">
+    <div style="max-width: 900px; margin: auto; display: flex; justify-content: center; gap: 15px;">
+        <button class="tab-btn active" onclick="switchTab('automacao', this)" style="border: none; background: none; padding: 8px 20px; font-weight: 600; cursor: pointer; color: var(--primary); border-radius: 8px; transition: 0.3s;">
+            <i class="fas fa-robot"></i> Automação & RPA
+        </button>
+        <button class="tab-btn" onclick="switchTab('bi', this)" style="border: none; background: none; padding: 8px 20px; font-weight: 600; cursor: pointer; color: #64748b; border-radius: 8px; transition: 0.3s;">
+            <i class="fas fa-chart-line"></i> Business Intelligence
+        </button>
+    </div>
+</nav>
+
+<div id="view-automacao" class="view-section active-view" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+    <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;">Automação Fiscal & RPA</h2>
+        <p style="color: #64748b;">Robôs de alta performance que eliminam o trabalho manual repetitivo.</p>
+    </div>
+    
+    <div id="automacao-container" class="projects-grid"></div>
+</div>
+
+<div id="view-bi" class="view-section" style="display: none; max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+    
+    <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;">Dashboard Executivo de Vendas & Impostos</h2>
+        <p style="color: #64748b;">Transformando dados brutos de XMLs em estratégia de negócio.</p>
+    </div>
+
+    <div style="background: white; padding: 30px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 40px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+        <h3 style="color: var(--accent); margin-bottom: 15px; font-size: 1.2rem;">Sobre a Solução</h3>
+        <p style="color: #475569; line-height: 1.8; margin-bottom: 15px;">
+            Suite completa de Business Intelligence desenvolvida em <strong>Power BI</strong> que resolve a fragmentação de dados fiscais e comerciais. 
+            O sistema integra 4 dashboards especializados que cobrem toda a cadeia de análise: desde o monitoramento fiscal (ICMS/DIFAL) até a performance operacional diária.
+        </p>
+        <p style="color: #475569; line-height: 1.8;">
+            Projetado para empresas multi-estaduais que precisam eliminar a "cegueira tributária" e identificar oportunidades geográficas de expansão.
+        </p>
+    </div>
+    
+    <div class="projects-grid" style="margin-bottom: 50px;">
+        <div class="card" onclick="openLightbox('img/icms.png', event)">
+            <div class="card-body">
+                <div class="card-category">Compliance</div>
+                <h3 class="card-title">Monitoramento Fiscal (ICMS)</h3>
+                <p class="card-desc">Controle absoluto de alíquotas médias e impacto do DIFAL. Identificação de carga tributária anormal.</p>
+                <div class="tech-stack-mini"><span class="mini-badge">Power BI</span></div>
+            </div>
+        </div>
+        <div class="card" onclick="openLightbox('img/mapa.png', event)">
+            <div class="card-body">
+                <div class="card-category">Logística</div>
+                <h3 class="card-title">Inteligência Geográfica</h3>
+                <p class="card-desc">Mapa estratégico para identificar concentração de risco e rotas logísticas.</p>
+                <div class="tech-stack-mini"><span class="mini-badge">Azure Maps</span></div>
+            </div>
+        </div>
+        <div class="card" onclick="openLightbox('img/Vendas.png', event)">
+            <div class="card-body">
+                <div class="card-category">Estratégia</div>
+                <h3 class="card-title">Performance Comercial</h3>
+                <p class="card-desc">Visão 360º de vendas por estado, produto e tendência sazonal.</p>
+                <div class="tech-stack-mini"><span class="mini-badge">DAX</span></div>
+            </div>
+        </div>
+        <div class="card" onclick="openLightbox('img/diaria.png', event)">
+            <div class="card-body">
+                <div class="card-category">Operacional</div>
+                <h3 class="card-title">Controle Diário</h3>
+                <p class="card-desc">Pulso do dia a dia. Identifica picos de demanda para planejamento de estoque.</p>
+                <div class="tech-stack-mini"><span class="mini-badge">Analytics</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
+        <div>
+            <h3 style="color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 20px;">O que resolvemos?</h3>
+            <ul style="list-style: none; color: #475569;">
+                <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+                    <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 4px;"></i>
+                    <div><strong>Fim da Fragmentação:</strong> Consolidação automática de dados de ERP, planilhas e XMLs.</div>
+                </li>
+                <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+                    <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 4px;"></i>
+                    <div><strong>Risco Fiscal:</strong> Monitoramento de oscilações de ICMS que corroem a margem de lucro.</div>
+                </li>
+                <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+                    <i class="fas fa-check-circle" style="color: var(--accent); margin-top: 4px;"></i>
+                    <div><strong>Decisões Data-Driven:</strong> Substituição de "achismos" por indicadores precisos de rentabilidade por estado.</div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3 style="color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 20px;">Stack Tecnológica</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <span style="background: #eff6ff; color: #1e40af; padding: 8px 15px; border-radius: 6px; font-weight: 600; font-size: 0.9rem;">Power BI Service</span>
+                <span style="background: #eff6ff; color: #1e40af; padding: 8px 15px; border-radius: 6px; font-weight: 600; font-size: 0.9rem;">DAX Avançado</span>
+                <span style="background: #eff6ff; color: #1e40af; padding: 8px 15px; border-radius: 6px; font-weight: 600; font-size: 0.9rem;">SQL Server</span>
+                <span style="background: #eff6ff; color: #1e40af; padding: 8px 15px; border-radius: 6px; font-weight: 600; font-size: 0.9rem;">Azure Maps</span>
+                <span style="background: #eff6ff; color: #1e40af; padding: 8px 15px; border-radius: 6px; font-weight: 600; font-size: 0.9rem;">ETL de XML</span>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #64748b;">
+                Atualização automática via Gateway e segurança RLS (Row-Level Security) por usuário.
+            </p>
+        </div>
+    </div>
+
+    <div class="roi-bar">
+        <div class="roi-item">
+            <span class="roi-val">95%</span><span style="color:#64748b; font-size: 0.9rem;">Menos tempo em relatórios</span>
+        </div>
+        <div class="roi-item">
+            <span class="roi-val">GPS</span><span style="color:#64748b; font-size: 0.9rem;">Visão Geográfica de Clientes</span>
+        </div>
+        <div class="roi-item">
+            <span class="roi-val">25%</span><span style="color:#64748b; font-size: 0.9rem;">Aumento de Margem (Est.)</span>
+        </div>
+    </div>
+</div>
+
+<div id="dynamic-modal" class="modal-overlay">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="detail-title" id="modal-title" style="font-size: 1.4rem; color: var(--primary);">Título do Projeto</h2>
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body" style="padding: 30px;">
+            <div style="background: #f1f5f9; padding: 15px; border-radius: 6px; border-left: 4px solid var(--accent); margin-bottom: 25px; font-family: 'Courier New', monospace; color: #475569; font-size: 0.85rem;" id="modal-stack"></div>
+            
+            <p id="modal-desc" style="color: #334155; margin-bottom: 25px; line-height: 1.6;"></p>
+            
+            <h3 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 15px; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">Funcionalidades</h3>
+            <ul id="modal-features" style="margin-bottom: 25px; padding-left: 20px; color: #475569; list-style-type: disc;"></ul>
+            
+            <div style="background: #eff6ff; padding: 20px; border-radius: 8px; border: 1px solid #dbeafe;">
+                <strong style="color: #1e40af; display: block; margin-bottom: 5px;">Desafio Técnico:</strong>
+                <p id="modal-challenge" style="color: #1e3a8a; font-style: italic; font-size: 0.95rem;"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="image-lightbox" class="lightbox" onclick="closeLightbox()">
+    <span style="position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; font-weight: bold;">&times;</span>
+    <img src="" alt="Zoom Project" style="box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+</div>
+
+<footer style="text-align: center; padding: 60px 20px; background: #020617; color: white; margin-top: 60px; border-top: 1px solid #1e293b;">
+    <h2 style="margin-bottom: 10px; font-size: 1.8rem;">Vamos agendar uma conversa?</h2>
+    <p style="color: #94a3b8; margin-bottom: 30px;">Estou disponível para projetos de automação e consultoria fiscal.</p>
+
+    <div style="margin-bottom: 40px;">
+        <a href="mailto:Felipeschottconsultoria@gmail.com" style="
+            background: rgba(59, 130, 246, 0.1);
+            color: #60a5fa;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 15px 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: 0.3s;
+        ">
+            <i class="fas fa-envelope"></i>
+            Felipeschottconsultoria@gmail.com
+        </a>
+    </div>
+
+    <div style="border-top: 1px solid #1e293b; padding-top: 30px; max-width: 600px; margin: 0 auto;">
+        <small style="color: #475569;">© 2026 Felipe Schott • Rio de Janeiro</small>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
