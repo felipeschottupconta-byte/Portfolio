@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
 
-    <!-- ✅ INTRO: estilos -->
     <style>
         /* Esconde o site enquanto a intro roda */
         body.intro-running {
@@ -91,14 +90,10 @@
 </head>
 <body class="intro-running">
 
-    <!-- ✅ INTRO: canvas de partículas -->
     <canvas id="particles"></canvas>
 
-    <!-- ✅ INTRO: cortinas com as letras FS -->
     <div class="curtain curtain-left"><span class="letra">F</span></div>
     <div class="curtain curtain-right"><span class="letra">S</span></div>
-
-    <!-- ======= SEU SITE ORIGINAL (não mexa aqui) ======= -->
 
     <header>
         <img src="img/Foto.jpeg" alt="Felipe Schott" class="profile-img">
@@ -152,15 +147,29 @@
             <h2 style="font-size: 2rem; color: var(--primary); margin-bottom: 10px;">Dashboard Executivo de Vendas & Impostos</h2>
             <p style="color: #64748b;">Transformando dados brutos de XMLs em estratégia de negócio.</p>
         </div>
+
         <div style="background: white; padding: 30px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 40px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
-            <h3 style="color: var(--accent); margin-bottom: 15px; font-size: 1.2rem;">Sobre a Solução</h3>
+            
+            <h3 style="color: var(--accent); margin-bottom: 15px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-layer-group"></i> O Case: Suíte Fiscal & Vendas
+            </h3>
             <p style="color: #475569; line-height: 1.8; margin-bottom: 15px;">
-                Suite completa de Business Intelligence desenvolvida em <strong>Power BI</strong> que resolve a fragmentação de dados fiscais e comerciais. 
-                O sistema integra 4 dashboards especializados que cobrem toda a cadeia de análise: desde o monitoramento fiscal (ICMS/DIFAL) até a performance operacional diária.
+                Esta solução foi desenvolvida para resolver a fragmentação de dados em empresas multi-estaduais. O sistema integra 4 dashboards especializados que cobrem toda a cadeia: desde o <strong>monitoramento de risco fiscal (ICMS/DIFAL)</strong> até a performance operacional diária, eliminando a "cegueira tributária".
             </p>
-            <p style="color: #475569; line-height: 1.8;">
-                Projetado para empresas multi-estaduais que precisam eliminar a "cegueira tributária" e identificar oportunidades geográficas de expansão.
-            </p>
+        
+            <hr style="border: 0; border-top: 1px dashed #cbd5e1; margin: 25px 0;">
+        
+            <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary);">
+                <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-lightbulb"></i> Projetos Sob Medida (Qualquer Área)
+                </h3>
+                <p style="color: #475569; line-height: 1.6; font-size: 0.95rem;">
+                    Embora o exemplo acima seja focado na área fiscal, <strong>minha metodologia é agnóstica</strong>. 
+                    Seja automatizando planilhas de RH, criando controles financeiros ou integrando sistemas via Python, eu desenvolvo a ferramenta exata que o seu negócio precisa no momento.
+                    <br><br>
+                    <strong>Tem um desafio diferente?</strong> <a href="mailto:Felipeschottconsultoria@gmail.com" style="color: var(--accent); font-weight: bold; text-decoration: underline;">Vamos conversar sobre sua necessidade específica.</a>
+                </p>
+            </div>
         </div>
         <div class="projects-grid" style="margin-bottom: 50px;">
             <div class="card" onclick="openLightbox('img/icms.png', event)">
@@ -261,11 +270,8 @@
         </div>
     </footer>
 
-    <!-- ======= FIM DO SITE ORIGINAL ======= -->
-
     <script src="js/app.js"></script>
 
-    <!-- ✅ INTRO: script (sempre no final do body) -->
     <script>
         /* ── PARTÍCULAS ── */
         const canvas = document.getElementById('particles');
